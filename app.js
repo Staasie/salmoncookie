@@ -19,7 +19,6 @@ function CookieStand(locationName, minCustomersPerHour, maxCustomersPerHour, avg
   this.totalDailyCookies = 0;
 }
 
-// Prototype Methods
 CookieStand.prototype.calcCustomersEachHour = function () {
   for (let i = 0; i < hours.length; i++) {
     this.customersEachHour.push(random(this.minCustomersPerHour, this.maxCustomersPerHour));
@@ -31,7 +30,6 @@ CookieStand.prototype.calcCookiesEachHour = function () {
   for (let i = 0; i < hours.length; i++) {
     const oneHour = Math.ceil(this.customersEachHour[i] * this.avgCookiesPerSale);
     this.cookiesEachHour.push(oneHour);
-    // this.totalDailyCookies += oneHour;  this is added in an idk why
   }
 };
 
