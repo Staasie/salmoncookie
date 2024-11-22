@@ -1,11 +1,73 @@
-body header {
-  background: pink;
+/* WOULD JUST LIKE TO SAY I DID NOT DO THE CSS FOR THIS PAGE CHAT GPT DID I COPIED IN MY CODE AND ASKED IT TO GO BASIC GENERAL STYLING AS THE CSS WAS NOT PART OF THE REQUIREMENTS SO I JUST HAD IT DO IT FOR ME AND IT LOOKED NICE SO I KEPT IT!! I DID NOT DO THIS PORTION OF THE WORK THOUGH */
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fefaf6; /* Soft cream background */
+  color: #4a4a4a; /* Neutral text color */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-header {
-  text-align: center;
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #ffffff; /* White table background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-main h2 {
+th, td {
   text-align: center;
+  padding: 12px;
+  border: 1px solid #eeeeee;
+}
+
+/* Header Row */
+th {
+  background-color: #f7d1cd; /* Soft pastel pink */
+  color: #4a4a4a; /* Neutral dark text */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+  background-color: #fef3f0; /* Light pink row */
+}
+
+tr:nth-child(odd) {
+  background-color: #fdfdfd; /* Light off-white row */
+}
+
+/* Footer Row */
+tr:last-child th {
+  background-color: #e8e5d7; /* Soft pastel yellow */
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+/* Table Hover Effect */
+tr:hover {
+  background-color: #f9e3de; /* Highlight row on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 }
