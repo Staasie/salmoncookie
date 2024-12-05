@@ -8,9 +8,34 @@
   <body>
     <header>
       <h1>Salmon Cookies</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sales.html">SalesData</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h2>Check out my Salmon Cookie store locations and hours:</h2>
+      <section class="content"> 
+        <form id="add-location">
+          <fieldset>
+            <legend>adding a new store to the table</legend>
+    
+            <label for="locationName">Location Name</label>
+            <input id="locationName" name="location" type="text"></input>
+            <label for="min">Minimum Customers Per Hour</label>
+            <input id="min" name="min" type="number"></input>
+            <label for="max">Maximum Customers Per Hour</label>
+            <input id="max" name="max" type="number"></input>
+            <label for="avg">Average Cookies Per Sale</label>
+            <input id="avg" name="avg" type="text"></input>
+            <button type="submit">Click here to add!</button>
+          </fieldset>
+        </form>
+        <table id="sales-table"></table>
+      
+      </section>
       <div id="root">
         <!-- generate this from js: -->
         <!-- <article>
@@ -24,6 +49,7 @@
       </div>
     </main>
     <footer>
+      
     </footer>
 
 

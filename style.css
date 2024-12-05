@@ -4,7 +4,7 @@
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fefaf6; /* Soft cream background */
+  background-color: white; /* Soft cream background */
   color: #4a4a4a; /* Neutral text color */
   margin: 0;
   padding: 20px;
@@ -32,7 +32,7 @@ th, td {
 
 /* Header Row */
 th {
-  background-color: #f7d1cd; /* Soft pastel pink */
+  background-color: 111; /* Soft pastel pink */
   color: #4a4a4a; /* Neutral dark text */
   font-weight: bold;
   font-size: 1rem;
@@ -70,4 +70,8 @@ tr:hover {
     padding: 8px;
     font-size: 0.9rem;
   }
+}
+
+header h1 {
+  text-align: center;
 }
