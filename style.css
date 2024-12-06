@@ -1,8 +1,12 @@
 header {
-  text-align: center; /* Center text inside the header */
-  background-color: #f7c0c0; /* Optional: Add a subtle background to the header */
-  padding: 10px 0; /* Add padding to create spacing around the title */
+  text-align: center; /* Center text and other content inside the header */
+  background-color: #f7c0c0; /* Optional background color */
+  padding: 10px 0; /* Space around the content */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children horizontally */
 }
+
 
 header h1 {
   margin: 0; /* Remove default margin to ensure no extra spacing */
@@ -10,9 +14,13 @@ header h1 {
   color: #4a4a4a; /* Match the color scheme */
   background-color: salmon
 }
-img{
-  background-color: salmon
+img {
+  background-color: salmon; /* Optional background */
+  max-width: 100%; /* Ensure image doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 10px; /* Add spacing */
 }
+
 nav ul {
   list-style: none; /* Remove default bullet points from the list */
   padding: 0; /* Remove default padding */
