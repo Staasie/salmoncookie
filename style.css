@@ -1,17 +1,37 @@
-/* WOULD JUST LIKE TO SAY I DID NOT DO THE CSS FOR THIS PAGE CHAT GPT DID I COPIED IN MY CODE AND ASKED IT TO GO BASIC GENERAL STYLING AS THE CSS WAS NOT PART OF THE REQUIREMENTS SO I JUST HAD IT DO IT FOR ME AND IT LOOKED NICE SO I KEPT IT!! I DID NOT DO THIS PORTION OF THE WORK THOUGH */
+header {
+  text-align: center; /* Center text inside the header */
+  background-color: #f7c0c0; /* Optional: Add a subtle background to the header */
+  padding: 10px 0; /* Add padding to create spacing around the title */
+}
 
+header h1 {
+  margin: 0; /* Remove default margin to ensure no extra spacing */
+  font-size: 2rem; /* Adjust font size for prominence */
+  color: #4a4a4a; /* Match the color scheme */
+  background-color: salmon
+}
+img{
+  background-color: salmon
+}
+nav ul {
+  list-style: none; /* Remove default bullet points from the list */
+  padding: 0; /* Remove default padding */
+  margin: 10px 0 0 0; /* Add margin to create space below the title */
+  display: flex; /* Make navigation horizontal */
+  justify-content: center; /* Center the navigation items */
+  gap: 15px; /* Add spacing between navigation items */
+}
 
-/* General Styles */
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #4a4a4a; /* Match link color to the design */
+  font-size: 1rem; /* Adjust font size for navigation links */
+}
 body {
   font-family: 'Arial', sans-serif;
-  background-color: white; /* Soft cream background */
+  background-color: rgb(46, 17, 17); /* Soft cream background */
   color: #4a4a4a; /* Neutral text color */
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  background-color: salmon
 }
 
 /* Table Styles */
@@ -70,8 +90,4 @@ tr:hover {
     padding: 8px;
     font-size: 0.9rem;
   }
-}
-
-header h1 {
-  text-align: center;
 }
